@@ -1,0 +1,19 @@
+# Neo4j database folders
+data/
+logs/
+import/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Optional: Virtual environment folders
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
