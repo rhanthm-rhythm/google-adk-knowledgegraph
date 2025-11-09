@@ -75,9 +75,10 @@ class Neo4jForADK:
     database_name = "neo4j"
 
     def __init__(self):
-        neo4j_uri = os.getenv("NEO4J_URI")
+        # neo4j_uri = os.getenv("NEO4J_URI")
+        neo4j_uri = os.getenv("NEO4J_URI") or "bolt://localhost:7687"
         neo4j_username = os.getenv("NEO4J_USERNAME") or "neo4j"
-        neo4j_password = os.getenv("NEO4J_PASSWORD")
+        neo4j_password = os.getenv("NEO4J_PASSWORD") or "password"
         neo4j_database = os.getenv("NEO4J_DATABASE") or os.getenv("NEO4J_USERNAME") or "neo4j"
         self.database_name = neo4j_database
         self._driver =  GraphDatabase.driver(

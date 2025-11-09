@@ -3,7 +3,7 @@ from google.adk.agents.llm_agent import Agent
 from agent.tools.neo4j import say_hello
 
 # Define the Cypher Agent
-hello_agent = Agent(
+root_agent = Agent(
     name="hello_agent_v1",
     model="gemini-2.5-flash", # defined earlier in a variable
     description="Has friendly chats with a user.",
@@ -17,4 +17,4 @@ hello_agent = Agent(
     tools=[say_hello], # Pass the function directly
 )
 
-print(f"Agent '{hello_agent.name}' created.")
+print(f"Agent '{root_agent.name}' created.")

@@ -1,4 +1,4 @@
-from neo4j_for_adk import graphdb
+from agent.neo4j_for_adk import graphdb
 
 # Define a basic tool -- send a parameterized cypher query
 def say_hello(person_name: str) -> dict:
