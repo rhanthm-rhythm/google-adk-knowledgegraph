@@ -17,3 +17,6 @@ env/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Ignore Claude assistant data folder
+.claude/

@@ -17,3 +17,8 @@ def say_hello(person_name: str) -> dict:
     {
         "person_name": person_name
     })
+
+# Define the new goodbye tool
+def say_goodbye() -> dict:
+    """Provides a simple farewell message to conclude the conversation."""
+    return graphdb.send_query("RETURN 'Goodbye from Cypher!' as farewell")
