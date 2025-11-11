@@ -4,7 +4,7 @@ logs/
 import/
 
 # Environment variables
-.env
+**/.env
 
 # Python cache
 **/__pycache__/
@@ -20,3 +20,6 @@ Thumbs.db
 
 # Ignore Claude assistant data folder
 .claude/
+
+# Ignore virtual environment folder
+.venv/
