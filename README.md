@@ -115,14 +115,3 @@ Python can resolve the package imports.
 Feel free to open an issue or submit a PR. If you add persistent files or large model caches, add them to `.gitignore`.
 
 ## License
-
-This repository does not include a license file. Add one if you plan to publish or share this project publicly.
-
----
-
-If you want, I can also:
-- add short examples for replacing the `agent/helper.py` stub with a real ADK integration,
-- add a Makefile or `tasks.json` with common commands, or
-- run the runner/test script here and report output/errors.
-
-What would you like next?
