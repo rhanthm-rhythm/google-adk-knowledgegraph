@@ -1,4 +1,3 @@
-
 from google.adk.agents import Agent
 from knowledge_graph_agent.tools.shared.goal import (
     set_perceived_user_goal,

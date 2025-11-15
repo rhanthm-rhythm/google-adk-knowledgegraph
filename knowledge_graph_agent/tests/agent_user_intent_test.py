@@ -12,7 +12,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from knowledge_graph_agent.agent import root_agent
+from knowledge_graph_agent.agents.agent_user_intent import user_intent_agent
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from dotenv import load_dotenv
@@ -25,9 +25,9 @@ load_dotenv()
 print("GOOGLE_API_KEY loaded:", bool(os.getenv("GOOGLE_API_KEY")))
 print("Using VertexAI:", os.getenv("GOOGLE_GENAI_USE_VERTEXAI"))
 print("Libraries imported.")
-app_name = root_agent.name + "_app"
-user_id = root_agent.name + "_user"
-session_id = root_agent.name + "_session_01"
+app_name = user_intent_agent.name + "_app"
+user_id = user_intent_agent.name + "_user"
+session_id = user_intent_agent.name + "_session_01"
 
 # We need an async function to await for each conversation
 async def run_conversation(user_intent_caller, session_start):
