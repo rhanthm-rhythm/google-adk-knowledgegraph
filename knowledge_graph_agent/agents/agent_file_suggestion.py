@@ -9,7 +9,7 @@ from knowledge_graph_agent.tools.shared.goal import get_approved_user_goal
 file_suggestion_agent_instruction = """
 You are a constructive critic AI reviewing a list of files. Your goal is to suggest relevant files
 for constructing a knowledge graph.
-
+ 
 **Task:**
 Review the file list for relevance to the kind of graph and description specified in the approved user goal. 
 
